@@ -1,0 +1,24 @@
+input A
+input B
+input C
+if C<B then
+    TEMP=B
+    B=C
+    C=TEMP
+end if
+if A>B then
+    TEMP=B
+    B=A
+    A=TEMP
+end if
+if A>B then
+    TEMP=B
+    B=A
+    A=TEMP
+end if
+if C<B then
+    TEMP=B
+    B=C
+    C=TEMP
+end if
+output A,B,C
