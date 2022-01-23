@@ -1,0 +1,10 @@
+SUM=0
+A=1
+loop while A>=0
+    input A
+    SUM=SUM+A
+    if A<0 then
+        SUM=SUM-A
+    end if
+end loop
+output SUM
