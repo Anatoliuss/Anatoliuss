@@ -1,0 +1,20 @@
+output "Insert a card into a cash point"
+output "Was it accepted by the cash point?"
+BAL=1000
+input ANS
+if ANS=="No" then
+    output "Flip the card"
+    output "Insert a card into a cash point"
+else if ANS=="YES" then
+    output "Input the sum you want to take"
+    input SUM
+end if
+if SUM>BAL then
+    output "Refill your balance"
+    input PLUS
+    BAL=BAL+PLUS
+    output "Input the sum you want to take"
+    
+end if
+BAL=BAL-SUM
+output "Remaining balance: " + BAL
