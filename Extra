@@ -1,0 +1,21 @@
+POS=0
+COUNT=0
+TURN=1
+loop until COUNT<100
+    POS=POS+TURN
+    if POS==11 then
+        POS==1
+    end if
+    if POS==-1 then 
+        POS=10
+    end if
+    COUNT=COUNT+1
+    if COUNT mod 7==0 then
+        TURN==-1
+    end if
+    if COUNT mod 11==0 then
+        POS=POS+1
+    end if
+end loop
+output POS
+      
